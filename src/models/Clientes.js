@@ -19,8 +19,14 @@ const clienteSchema = new Schema({
         type: String,
         unique: true,
         index: true
+    },
+    dataCadastro: {
+        type: Date,
+        default: Date.now
     }
-})
+}, 
+    {versionKey: false}) // no versionar os dados armazenamento
+
 // exportar para o main o modelo de dados
-// Obs; Cliente sera o nome da coleção
+// Obs; Cliente sera o nome da coleção 
 module.exports = model('Clientes', clienteSchema)

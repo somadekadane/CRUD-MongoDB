@@ -9,7 +9,8 @@ const mongoose = require('mongoose')
 // configuração do acesso ao banco de dados
 // ip ou link - autenticação / usuario e senha
 // Obs: Atlas(obter via compass)
-const url ='mongodb+srv://admin:123Senac@projetonode.d0d37.mongodb.net/'
+// para criar um banco de dados pesonalizado no final da string da url (ex: dbclientes)
+const url ='mongodb+srv://admin:123Senac@projetonode.d0d37.mongodb.net/dbclientes'
 
 //criar uma variavel de apoio pra validação
 let conectado = false

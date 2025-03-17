@@ -36,7 +36,11 @@ const iniciarsistema = async () => {
     console.log("------------------------------------")
     await conectar()
     // CRUD create (insersão no banco de dados)
-    await salvarCliente("Eder Silva", "99999-1234", "12345678900")
+    await salvarCliente("Marco Silva", "99999-1299", "12345678911")
+    await salvarCliente("Maria Silva", "99999-1288", "12345678933")
+    await salvarCliente("Eder Silva", "99999-1277", "12345678955")
+    await salvarCliente("Marcia Silva", "99999-1266", "12345678977")
+    await salvarCliente("Gildo Silva", "99999-1255", "12345678999")
     await desconectar()
 }
 
